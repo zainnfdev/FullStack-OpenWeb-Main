@@ -1,0 +1,20 @@
+# fly.toml app configuration file generated for throbbing-frost-3591 on 2023-11-10T18:34:35+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "throbbing-frost-3591"
+primary_region = "arn"
+
+[build]
+
+[env]
+  PORT = "3003"
+
+[http_service]
+  internal_port = 3003
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]

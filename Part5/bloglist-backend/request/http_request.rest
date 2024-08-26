@@ -1,0 +1,91 @@
+###
+GET http://localhost:3003/api/blogs
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username" : "mluukkai",
+    "name" : "Matti Luukkalainen",
+    "password" : "salainen"
+}
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username" : "thiwankas",
+    "name" : "Thiwanka Somachandra",
+    "password" : "sa"
+}
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username" : "th",
+    "name" : "Thiwanka Somachandra",
+    "password" : "salainen"
+}
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username" : "",
+    "name" : "Thiwanka Somachandra",
+    "password" : ""
+}
+###
+POST http://localhost:3003/api/users
+Content-Type: application/json
+
+{
+    "username" : "root",
+    "name" : "Super User",
+    "password" : "salainen"
+}
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "userId" : "655fa6fa1727b51bf820f05d",
+    "title": "What Are the React Team Principles?",
+    "author": "Dan Abramov",
+    "url": "https://overreacted.io/what-are-the-react-team-principles/",
+    "likes": 5000
+}
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+
+{
+    "userId" : "656167723544a5c129d77782",
+    "title": "Microservices - a definition of this new architectural term",
+    "author": "Martin Flower",
+    "url": "https://martinfowler.com/tags/microservices.html",
+    "likes": 3000
+}
+###
+POST http://localhost:3003/api/login
+Content-Type: application/json
+
+{
+    "username" : "thiwankas",
+    "password" : "salainen"
+}
+###
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImhlbGxhcyIsImlkIjoiNjU2MTY3NzIzNTQ0YTVjMTI5ZDc3NzgyIiwiaWF0IjoxNzAwOTk2NjExfQ.EMRpWVz0WwIPg-86Jhsmv1QhW9udJiZnzOOrL8zHc_o
+
+{
+    "title": "The Agile Fluency Model",
+    "author": "James Shore",
+    "url": "https://martinfowler.com/articles/agileFluency.html",
+    "likes": 5000
+}
+###
+DELETE http://localhost:3003/api/blogs/6563261f15937f25c22f7f4a
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im1sdXVra2FpIiwiaWQiOiI2NTVmYTZmYTE3MjdiNTFiZjgyMGYwNWQiLCJpYXQiOjE3MDA5ODM5NTV9.uu6qTgB1NyRuOm2vmNVksaDYfo4odFL3kc8DOPc76R0

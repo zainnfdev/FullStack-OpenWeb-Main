@@ -1,0 +1,43 @@
+POST https://wild-tree-309.fly.dev/api/persons
+Content-Type: application/json
+
+{
+    "name" : "Liisa Marttinen",
+    "number" : "040-243563"
+}
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name" : "Liisa Marttinen",
+    "number" : "040-243563"
+}
+
+###
+
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name" : "Thiwanka Somachandra",
+    "number" : "045-123456"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name" : "",
+    "number" : "+358 123 4567"
+}
+
+###
+POST http://localhost:3001/api/persons
+Content-Type: application/json
+
+{
+    "name" : "Kaushalya Roshini",
+    "number" : ""
+}
